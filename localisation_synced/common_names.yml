@@ -1,4 +1,24 @@
-﻿l_default:
+﻿l_spanish:
+ NAME_Syzygy_Remains: "Restos Syzygy"
+ NAME_Ring_Section_A: "Sección del Anillo A"
+ NAME_Ring_Section_B: "Sección del Anillo B"
+ NAME_Ring_Section_C: "Sección del Anillo C"
+ NAME_Ring_Section_D: "Sección del Anillo D"
+ NAME_Ring_Section: "Sección del Anillo"
+ NAME_Habitable_Section_A: "Sección Habitable A"
+ NAME_Habitable_Section_B: "Sección Habitable B"
+ NAME_Habitable_Section_C: "Sección Habitable C"
+ NAME_Habitable_Section_D: "Sección Habitable D"
+ NAME_Prism: "Prisma"
+ NAME_Enigmatic_Energy: "Energia Enigmática"
+ NAME_Spaceborne_Organics: "Orgánicos Nacidos en el Espacio"
+ NAME_Mineral_Extraction_Operation: "Operación de Extracción Mineral"
+ NAME_Placid_Leviathans: "Leviatanes Plácidos"
+ NAME_Privateers: "Corsarios"
+ NAME_Nivlac_Circle: "Círculo Nivlac"
+ NAME_Galactic_Doorstep: "La Corona Negra"
+
+l_default:
  NAME_Syzygy_Remains: "Syzygy Remains"
  NAME_Ring_Section_A: "Ring Section A"
  NAME_Ring_Section_B: "Ring Section B"
