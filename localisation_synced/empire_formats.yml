@@ -9,7 +9,6 @@
  format.imp_mil.4f: "<es_imperial_mil_desc_f> <es_imperial_mil_f> [This.GetSpeciesName]"
  format.imp_mil.5: "<es_imperial_mil> <es_imperial_mil_mid_desc> [This.GetSpeciesName]"
  format.imp_mil.5f: "<es_imperial_mil_f> <es_imperial_mil_mid_desc_f> [This.GetSpeciesName]"
-
  format.imp_spi.1: "<es_imperial_spi> de [This.Capital.System.GetName]"
  format.imp_spi.1f: "<es_imperial_spi_f> de [This.Capital.System.GetName]"
  format.imp_spi.2: "<es_imperial_spi> de [This.Capital.GetName]"
@@ -32,7 +31,6 @@ l_default:
  format.imp_mil.4f: "<imperial_mil_desc> [This.GetSpeciesName] <imperial_mil>"
  format.imp_mil.5: "[This.GetSpeciesName] <imperial_mil_mid_desc> <imperial_mil>"
  format.imp_mil.5f: "[This.GetSpeciesName] <imperial_mil_mid_desc> <imperial_mil>"
-
  format.imp_spi.1: "<imperial_spi> of [This.Capital.System.GetName]"
  format.imp_spi.1f: "<imperial_spi> of [This.Capital.System.GetName]"
  format.imp_spi.2: "<imperial_spi> of [This.Capital.GetName]"
@@ -43,7 +41,6 @@ l_default:
  format.imp_spi.4f: "<imperial_spi_desc> [This.GetSpeciesName] <imperial_spi>"
  format.imp_spi.5: "[This.GetSpeciesName] <imperial_spi_mid_desc> <imperial_spi>"
  format.imp_spi.5f: "[This.GetSpeciesName] <imperial_spi_mid_desc> <imperial_spi>"
-
  format.imp_cult.1: "<imperial_imperial_cult> of [This.Capital.System.GetName]"
  format.imp_cult.2: "<imperial_imperial_cult> of [This.Capital.GetName]"
  format.imp_cult.3: "[This.GetSpeciesName] <imperial_imperial_cult>"
