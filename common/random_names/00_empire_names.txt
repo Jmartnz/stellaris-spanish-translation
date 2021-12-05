@@ -200,6 +200,21 @@ empire_name_parts_list = {
 	}
 }
 
+empire_name_parts_list = {
+	key = "es_imperial_mil"
+	parts = {
+		"Imperio" = 3
+	}
+}
+
+empire_name_parts_list = {
+	key = "es_imperial_mil_f"
+	parts = {
+		"Superpotencia" = 2
+		"Hegemonía" = 1
+	}
+}
+
 # Dictatorial Militarist
 empire_name_parts_list = {
 	key = "dictatorial_mil"
@@ -309,6 +324,28 @@ empire_name_parts_list = {
 	}
 }
 
+empire_name_parts_list = {
+	key = "es_imperial_mil_desc"
+	parts = {
+		"Todopoderoso" = 1
+		"Supremo" = 2
+		"Magno" = 3
+		"Gran" = 3
+		"Glorioso" = 3
+	}
+}
+
+empire_name_parts_list = {
+	key = "es_imperial_mil_desc_f"
+	parts = {
+		"Todopoderosa" = 1
+		"Suprema" = 2
+		"Magna" = 3
+		"Gran" = 3
+		"Gloriosa" = 3
+	}
+}
+
 # Dictatorial Militarist Descriptive
 empire_name_parts_list = {
 	key = "dictatorial_mil_desc"
@@ -355,6 +392,28 @@ empire_name_parts_list = {
 		"Galactic" = 1
 		"Star" = 3
 		"Stellar" = 1
+	}
+}
+
+empire_name_parts_list = {
+	key = "es_imperial_mil_mid_desc"
+	parts = {
+		"Interestelar" = 1
+		"Interplanetario" = 1
+		"Galáctico" = 1
+		"de las Estrellas" = 1
+		"Estelar" = 3
+	}
+}
+
+empire_name_parts_list = {
+	key = "es_imperial_mil_mid_desc_f"
+	parts = {
+		"Interestelar" = 1
+		"Interplanetaria" = 1
+		"Galáctica" = 1
+		"de las Estrellas" = 1
+		"Estelar" = 3
 	}
 }
 
@@ -1494,6 +1553,50 @@ empire_name_format = {
 	# Empire of Sol
 }
 
+# ES Imperial Militarist 1
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "gov_star_empire"
+				has_government = "gov_martial_empire"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_mil.1"
+	prefix_format = "<es_imperial_mil> de [This.Capital.System.GetName]"
+	noun = "[This.Capital.System.GetName]"
+	# Imperio de Sol
+}
+
+# ES Imperial Militarist 1f
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "gov_star_empire"
+				has_government = "gov_martial_empire"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_mil.1f"
+	prefix_format = "<es_imperial_mil_f> de [This.Capital.System.GetName]"
+	noun = "[This.Capital.System.GetName]"
+	# Hegemonía de Sol
+}
+
 # Imperial Militarist 2
 empire_name_format = {
 	random_weight = {
@@ -1514,6 +1617,50 @@ empire_name_format = {
 	prefix_format = "[This.Capital.GetName] <imperial_mil>"
 	noun = "[This.Capital.GetName]"
 	# Empire of Earth
+}
+
+# ES Imperial Militarist 2
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "gov_star_empire"
+				has_government = "gov_martial_empire"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_mil.2"
+	prefix_format = "<es_imperial_mil> de [This.Capital.GetName]"
+	noun = "[This.Capital.GetName]"
+	# Imperio de La Tierra
+}
+
+# ES Imperial Militarist 2f
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			OR = {
+				has_government = "gov_star_empire"
+				has_government = "gov_martial_empire"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_mil.2f"
+	prefix_format = "<es_imperial_mil_f> de [This.Capital.GetName]"
+	noun = "[This.Capital.GetName]"
+	# Hegemonía de La Tierra
 }
 
 # Imperial Militarist 3
@@ -1538,6 +1685,50 @@ empire_name_format = {
 	# Human Empire
 }
 
+# ES Imperial Militarist 3
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 5
+			OR = {
+				has_government = "gov_star_empire"
+				has_government = "gov_martial_empire"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_mil.3"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<es_imperial_mil> [This.GetSpeciesName]"
+	# Imperio Humano
+}
+
+# ES Imperial Militarist 3f
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 5
+			OR = {
+				has_government = "gov_star_empire"
+				has_government = "gov_martial_empire"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_mil.3f"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<es_imperial_mil_f> [This.GetSpeciesName]"
+	# Hegemonía Humano
+}
+
 # Imperial Militarist 4
 empire_name_format = {
 	random_weight = {
@@ -1560,6 +1751,50 @@ empire_name_format = {
 	# Great Human Empire
 }
 
+# ES Imperial Militarist 4
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			OR = {
+				has_government = "gov_star_empire"
+				has_government = "gov_martial_empire"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_mil.4"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<es_imperial_mil_desc> <es_imperial_mil> [This.GetSpeciesName]"
+	# Gran Imperio Humano
+}
+
+# ES Imperial Militarist 4f
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			OR = {
+				has_government = "gov_star_empire"
+				has_government = "gov_martial_empire"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_mil.4f"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<es_imperial_mil_desc_f> <es_imperial_mil_f> [This.GetSpeciesName]"
+	# Gran Hegemonía Humano
+}
+
 # Imperial Militarist 5
 empire_name_format = {
 	random_weight = {
@@ -1580,6 +1815,50 @@ empire_name_format = {
 	noun = "[This.GetSpeciesName]"
 	prefix_format = "[This.GetSpeciesName] <imperial_mil>"
 	# Human Star Empire
+}
+
+# ES Imperial Militarist 5
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			OR = {
+				has_government = "gov_star_empire"
+				has_government = "gov_martial_empire"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_mil.5"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<es_imperial_mil> <es_imperial_mil_mid_desc> [This.GetSpeciesName]"
+	# Imperio Estelar Humano
+}
+
+# ES Imperial Militarist 5f
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			OR = {
+				has_government = "gov_star_empire"
+				has_government = "gov_martial_empire"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_mil.5f"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<es_imperial_mil_f> <es_imperial_mil_mid_desc_f> [This.GetSpeciesName]"
+	# Hegemonía Estelar Humano
 }
 
 ### Imperial Spiritualist

@@ -1,9 +1,26 @@
-﻿l_default:
+﻿l_spanish:
+ format.imp_mil.1: "<es_imperial_mil> de [This.Capital.System.GetName]"
+ format.imp_mil.1f: "<es_imperial_mil_f> de [This.Capital.System.GetName]"
+ format.imp_mil.2: "<es_imperial_mil> de [This.Capital.GetName]"
+ format.imp_mil.2f: "<es_imperial_mil_f> de [This.Capital.GetName]"
+ format.imp_mil.3: "<es_imperial_mil> [This.GetSpeciesName]"
+ format.imp_mil.3f: "<es_imperial_mil_f> [This.GetSpeciesName]"
+ format.imp_mil.4: "<es_imperial_mil_desc> <es_imperial_mil> [This.GetSpeciesName]"
+ format.imp_mil.4f: "<es_imperial_mil_desc_f> <es_imperial_mil_f> [This.GetSpeciesName]"
+ format.imp_mil.5: "<es_imperial_mil> <es_imperial_mil_mid_desc> [This.GetSpeciesName]"
+ format.imp_mil.5f: "<es_imperial_mil_f> <es_imperial_mil_mid_desc_f> [This.GetSpeciesName]"
+
+l_default:
  format.imp_mil.1: "<imperial_mil> of [This.Capital.System.GetName]"
+ format.imp_mil.1f: "<imperial_mil> of [This.Capital.System.GetName]"
  format.imp_mil.2: "<imperial_mil> of [This.Capital.GetName]"
+ format.imp_mil.2f: "<imperial_mil> of [This.Capital.GetName]"
  format.imp_mil.3: "[This.GetSpeciesName] <imperial_mil>"
+ format.imp_mil.3f: "[This.GetSpeciesName] <imperial_mil>"
  format.imp_mil.4: "<imperial_mil_desc> [This.GetSpeciesName] <imperial_mil>"
+ format.imp_mil.4f: "<imperial_mil_desc> [This.GetSpeciesName] <imperial_mil>"
  format.imp_mil.5: "[This.GetSpeciesName] <imperial_mil_mid_desc> <imperial_mil>"
+ format.imp_mil.5f: "[This.GetSpeciesName] <imperial_mil_mid_desc> <imperial_mil>"
  format.imp_spi.1: "<imperial_spi> of [This.Capital.System.GetName]"
  format.imp_spi.2: "<imperial_spi> of [This.Capital.GetName]"
  format.imp_spi.3: "[This.GetSpeciesName] <imperial_spi>"
