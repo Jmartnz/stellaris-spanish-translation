@@ -473,6 +473,25 @@ empire_name_parts_list = {
 	}
 }
 
+empire_name_parts_list = {
+	key = "es_imperial_spi"
+	parts = {
+		"Imperio" = 3
+		"Reino" = 3
+		"Principado" = 2
+		"Gran Ducado" = 1
+	}
+}
+
+empire_name_parts_list = {
+	key = "es_imperial_spi_f"
+	parts = {
+		"Orden" = 3
+		"Fundación" = 3
+		"Cofradía" = 2
+	}
+}
+
 # Dictatorial Spiritualist
 empire_name_parts_list = {
 	key = "dictatorial_spi"
@@ -584,6 +603,30 @@ empire_name_parts_list = {
 	}
 }
 
+empire_name_parts_list = {
+	key = "es_imperial_spi_desc"
+	parts = {
+		"Santo" = 4
+		"Divino" = 4
+		"Bendecido" = 4
+		"Sagrado" = 4
+		"Sacro" = 4
+		"Pío" = 4
+	}
+}
+
+empire_name_parts_list = {
+	key = "es_imperial_spi_desc_f"
+	parts = {
+		"Santa" = 4
+		"Divina" = 4
+		"Bendecida" = 4
+		"Sagrada" = 4
+		"Sacra" = 4
+		"Pía" = 4
+	}
+}
+
 # Dictatorial Spiritualist Descriptive
 empire_name_parts_list = {
 	key = "dictatorial_spi_desc"
@@ -635,6 +678,30 @@ empire_name_parts_list = {
 		"Sacred" = 4
 		"Sacrosanct" = 4
 		"Pious" = 4
+	}
+}
+
+empire_name_parts_list = {
+	key = "es_imperial_spi_mid_desc"
+	parts = {
+		"Santo" = 4
+		"Divino" = 4
+		"Bendecido" = 4
+		"Sagrado" = 4
+		"Sacro" = 4
+		"Pío" = 4
+	}
+}
+
+empire_name_parts_list = {
+	key = "es_imperial_spi_mid_desc_f"
+	parts = {
+		"Santa" = 4
+		"Divina" = 4
+		"Bendecida" = 4
+		"Sagrada" = 4
+		"Sacra" = 4
+		"Pía" = 4
 	}
 }
 
@@ -1882,6 +1949,44 @@ empire_name_format = {
 	# Empire of Sol
 }
 
+# ES Imperial Spiritualist 1
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_theocratic_monarchy"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_spi.1"
+	noun = "[This.Capital.System.GetName]"
+	prefix_format = "<es_imperial_spi> de [This.Capital.System.GetName]"
+	# Imperio de Sol
+}
+
+# ES Imperial Spiritualist 1f
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_theocratic_monarchy"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_spi.1f"
+	noun = "[This.Capital.System.GetName]"
+	prefix_format = "<es_imperial_spi_f> de [This.Capital.System.GetName]"
+	# Orden de Sol
+}
+
 # Imperial Spiritualist 2
 empire_name_format = {
 	random_weight = {
@@ -1899,6 +2004,44 @@ empire_name_format = {
 	noun = "[This.Capital.GetName]"
 	prefix_format = "[This.Capital.GetName] <imperial_spi>"
 	# Empire of Earth
+}
+
+# ES Imperial Spiritualist 2
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_theocratic_monarchy"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_spi.2"
+	noun = "[This.Capital.GetName]"
+	prefix_format = "<es_imperial_spi> de [This.Capital.GetName]"
+	# Imperio de La Tierra
+}
+
+# ES Imperial Spiritualist 2f
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_theocratic_monarchy"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_spi.2f"
+	noun = "[This.Capital.GetName]"
+	prefix_format = "<es_imperial_spi_f> de [This.Capital.GetName]"
+	# Orden de La Tierra
 }
 
 # Imperial Spiritualist 3
@@ -1920,6 +2063,44 @@ empire_name_format = {
 	# Human Empire
 }
 
+# ES Imperial Spiritualist 3
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = "gov_theocratic_monarchy"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_spi.3"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<es_imperial_spi> [This.GetSpeciesName]"
+	# Imperio Humano
+}
+
+# ES Imperial Spiritualist 3f
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 5
+			has_government = "gov_theocratic_monarchy"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_spi.3f"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<es_imperial_spi_f> [This.GetSpeciesName]"
+	# Orden Humano
+}
+
 # Imperial Spiritualist 4
 empire_name_format = {
 	random_weight = {
@@ -1939,6 +2120,44 @@ empire_name_format = {
 	# Great Human Empire
 }
 
+# ES Imperial Spiritualist 4
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = "gov_theocratic_monarchy"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_spi.4"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<es_imperial_spi_desc> <es_imperial_spi> [This.GetSpeciesName]"
+	# Santo Imperio Humano
+}
+
+# ES Imperial Spiritualist 4f
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = "gov_theocratic_monarchy"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_spi.4f"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<es_imperial_spi_desc_f> <es_imperial_spi_f> [This.GetSpeciesName]"
+	# Santa Orden Humano
+}
+
 # Imperial Spiritualist 5
 empire_name_format = {
 	random_weight = {
@@ -1956,6 +2175,44 @@ empire_name_format = {
 	noun = "[This.GetSpeciesName]"
 	prefix_format = "[This.GetSpeciesName] <imperial_spi>"
 	# Human Star Empire
+}
+
+# ES Imperial Spiritualist 5
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = "gov_theocratic_monarchy"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_spi.5"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<es_imperial_spi> <es_imperial_spi_mid_desc> [This.GetSpeciesName]"
+	# Imperio Santo Humano
+}
+
+# ES Imperial Spiritualist 5f
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			has_government = "gov_theocratic_monarchy"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_spi.5f"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<es_imperial_spi_f> <es_imperial_spi_mid_desc_f> [This.GetSpeciesName]"
+	# Orden Santa Humano
 }
 
 ### Imperial Imperial Cult
