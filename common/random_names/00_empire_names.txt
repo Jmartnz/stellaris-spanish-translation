@@ -572,6 +572,21 @@ empire_name_parts_list = {
 	}
 }
 
+empire_name_parts_list = {
+	key = "es_imperial_imperial_cult"
+	parts = {
+		"Imperio" = 1
+		"Culto Imperial" = 1
+	}
+}
+
+empire_name_parts_list = {
+	key = "es_imperial_imperial_cult_f"
+	parts = {
+		"Dinastía" = 1
+	}
+}
+
 # Oligarchic Holy Tribunal
 empire_name_parts_list = {
 	key = "oligarchic_holy_tribunal"
@@ -2236,6 +2251,44 @@ empire_name_format = {
 	# Empire of Sol
 }
 
+# ES Imperial Imperial Cult 1
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_divine_empire"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_cult.1"
+	noun = "[This.Capital.System.GetName]"
+	prefix_format = "<es_imperial_imperial_cult> de [This.Capital.System.GetName]"
+	# Culto Imperial de Sol
+}
+
+# ES Imperial Imperial Cult 1f
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_divine_empire"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_cult.1f"
+	noun = "[This.Capital.System.GetName]"
+	prefix_format = "<es_imperial_imperial_cult_f> de [This.Capital.System.GetName]"
+	# Dinastía de Sol
+}
+
 # Imperial Imperial Cult 2
 empire_name_format = {
 	random_weight = {
@@ -2253,6 +2306,44 @@ empire_name_format = {
 	noun = "[This.Capital.GetName]"
 	prefix_format = "[This.Capital.GetName] <imperial_imperial_cult>"
 	# Empire of Earth
+}
+
+# ES Imperial Imperial Cult 2
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_divine_empire"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_cult.2"
+	noun = "[This.Capital.GetName]"
+	prefix_format = "<es_imperial_imperial_cult> de [This.Capital.GetName]"
+	# Culto Imperial de La Tierra
+}
+
+# ES Imperial Imperial Cult 2f
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 1
+			has_government = "gov_divine_empire"
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_cult.2f"
+	noun = "[This.Capital.GetName]"
+	prefix_format = "<es_imperial_imperial_cult_f> de [This.Capital.GetName]"
+	# Dinastía de La Tierra
 }
 
 # Imperial Imperial Cult 3
@@ -2277,6 +2368,50 @@ empire_name_format = {
 	# Human Empire
 }
 
+# ES Imperial Imperial Cult 3
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 5
+			OR = {
+				has_government = "gov_divine_empire"
+				has_government = "gov_mortal_empire"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_cult.3"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<es_imperial_imperial_cult> [This.GetSpeciesName]"
+	# Culto Imperial Humano
+}
+
+# ES Imperial Imperial Cult 3f
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 5
+			OR = {
+				has_government = "gov_divine_empire"
+				has_government = "gov_mortal_empire"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_cult.3f"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<es_imperial_imperial_cult_f> [This.GetSpeciesName]"
+	# Dinastía Humano
+}
+
 # Imperial Imperial Cult 4
 empire_name_format = {
 	random_weight = {
@@ -2299,6 +2434,50 @@ empire_name_format = {
 	# Great Human Empire
 }
 
+# ES Imperial Imperial Cult 4
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			OR = {
+				has_government = "gov_divine_empire"
+				has_government = "gov_mortal_empire"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_cult.4"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<es_imperial_spi_desc> <es_imperial_imperial_cult> [This.GetSpeciesName]"
+	# Gran Culto Imperial Humano
+}
+
+# ES Imperial Imperial Cult 4f
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			OR = {
+				has_government = "gov_divine_empire"
+				has_government = "gov_mortal_empire"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_cult.4f"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<es_imperial_spi_desc_f> <es_imperial_imperial_cult_f> [This.GetSpeciesName]"
+	# Gran Dinastía Humano
+}
+
 # Imperial Imperial Cult 5
 empire_name_format = {
 	random_weight = {
@@ -2319,6 +2498,50 @@ empire_name_format = {
 	noun = "[This.GetSpeciesName]"
 	prefix_format = "[This.GetSpeciesName] <imperial_imperial_cult>"
 	# Human Star Empire
+}
+
+# ES Imperial Imperial Cult 5
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			OR = {
+				has_government = "gov_divine_empire"
+				has_government = "gov_mortal_empire"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_cult.5"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<es_imperial_imperial_cult> <es_imperial_spi_mid_desc> [This.GetSpeciesName]"
+	# Culto Imperial Estelar Humano
+}
+
+# ES Imperial Imperial Cult 5f
+empire_name_format = {
+	random_weight = {
+		factor = 0
+		modifier = {
+			add = 2
+			OR = {
+				has_government = "gov_divine_empire"
+				has_government = "gov_mortal_empire"
+			}
+			is_pirate = no
+			is_primitive = no
+			NOT = { is_country_type = fallen_empire }
+			NOT = { is_country_type = awakened_fallen_empire }
+		}
+	}
+	format = "format.imp_cult.5f"
+	noun = "[This.GetSpeciesName]"
+	prefix_format = "<es_imperial_imperial_cult_f> <es_imperial_spi_mid_desc_f> [This.GetSpeciesName]"
+	# Dinastía Estelar Humano
 }
 
 ### Imperial Materialist
